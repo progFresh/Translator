@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TranslateViewController.swift
 //  Translator
 //
 //  Created by Сергей Полозов on 14.06.2020.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class TranslateViewController: UIViewController {
+
+    // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
