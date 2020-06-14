@@ -21,16 +21,50 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="P16-oj-a2s">
+                                <rect key="frame" x="0.0" y="148" width="414" height="748"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wPQ-F3-C3J">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lph-Ds-G3B">
+                                <rect key="frame" x="186" y="143" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gjc-9U-GwG">
+                                <rect key="frame" x="186" y="65" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Gjc-9U-GwG" firstAttribute="centerX" secondItem="rrg-7J-7ae" secondAttribute="centerX" id="04r-ph-0Qn"/>
+                            <constraint firstItem="P16-oj-a2s" firstAttribute="leading" secondItem="rrg-7J-7ae" secondAttribute="leading" id="1Ru-zt-Y0p"/>
                             <constraint firstItem="xWN-WJ-kqH" firstAttribute="centerX" secondItem="rrg-7J-7ae" secondAttribute="centerX" id="5zy-ah-SbL"/>
+                            <constraint firstAttribute="bottom" secondItem="P16-oj-a2s" secondAttribute="bottom" id="BnX-2d-BgC"/>
+                            <constraint firstItem="P16-oj-a2s" firstAttribute="top" secondItem="xWN-WJ-kqH" secondAttribute="bottom" constant="20" id="Cq3-g3-C4N"/>
+                            <constraint firstItem="Lph-Ds-G3B" firstAttribute="centerX" secondItem="rrg-7J-7ae" secondAttribute="centerX" id="EUg-8K-nd2"/>
+                            <constraint firstItem="P16-oj-a2s" firstAttribute="trailing" secondItem="rrg-7J-7ae" secondAttribute="trailing" id="Lcc-Lj-nvL"/>
+                            <constraint firstItem="xWN-WJ-kqH" firstAttribute="top" secondItem="Gjc-9U-GwG" secondAttribute="bottom" constant="8" id="WXe-7s-9z2"/>
                             <constraint firstItem="xWN-WJ-kqH" firstAttribute="leading" secondItem="rrg-7J-7ae" secondAttribute="leading" constant="20" id="dFX-bI-RhT"/>
                             <constraint firstItem="xWN-WJ-kqH" firstAttribute="top" secondItem="rrg-7J-7ae" secondAttribute="top" constant="50" id="nyv-iO-Uq4"/>
+                            <constraint firstItem="Lph-Ds-G3B" firstAttribute="top" secondItem="xWN-WJ-kqH" secondAttribute="bottom" constant="15" id="v30-nc-aSS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rrg-7J-7ae"/>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="P16-oj-a2s" id="9mr-DC-klx"/>
+                        <outlet property="descriptionLabel" destination="Gjc-9U-GwG" id="5WS-1d-jn6"/>
+                        <outlet property="errorLabel" destination="Lph-Ds-G3B" id="rRo-Fh-rXP"/>
                         <outlet property="textField" destination="xWN-WJ-kqH" id="iFj-WB-WDe"/>
                     </connections>
                 </viewController>

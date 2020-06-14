@@ -21,7 +21,7 @@ final class TranslateModuleConfigurator {
             fatalError("Can't load \(name) from storyboard, check that controller is initial view controller")
         }
 
-        let presenter = TranslatePresenter(delayer: TaskDelayer(delay: 3))
+        let presenter = TranslatePresenter(delayer: TaskDelayer(delay: 1.5))
 //        let router = ProductHistoryDetailRouter()
 //
         presenter.view = view

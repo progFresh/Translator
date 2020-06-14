@@ -14,6 +14,8 @@ final class TranslatePresenter {
 
     private enum Constants {
         static let loadingPage = "1"
+        static let errorText = "Не удалось получить данные"
+        static let descriptionText = "Введите слово на английском"
     }
 
     // MARK: - Public Properties
@@ -37,6 +39,7 @@ extension TranslatePresenter: TranslateViewOutput {
 
     func viewDidLoad() {
         view?.configure()
+        view?.setDescriptionLabel(text: Constants.descriptionText)
     }
 
     func textFieldDidChange(with text: String) {
@@ -61,9 +64,19 @@ private extension TranslatePresenter {
             word: word,
             page: Constants.loadingPage
         ).onCompleted { [weak self] value in
-            print("kek")
-        }.onError { [weak self] error in
-            print(error)
+            self?.handle(word: value.first)
+        }.onError { [weak self] _ in
+            self?.view?.setErrorViews(errorText: Constants.errorText)
         }
+    }
+
+    func handle(word: Word?) {
+        guard let word = word else {
+            view?.setErrorViews(errorText: Constants.errorText)
+            return
+        }
+
+        view?.setErrorViews(errorText: nil)
+        view?.setData(with: word)
     }
 }

@@ -21,5 +21,8 @@ public extension UIColor {
         public static var lightBlue: UIColor {
             return UIColor(126,179,255)
         }
+        public static var red: UIColor {
+            return UIColor(220,20,60)
+        }
     }
 }
