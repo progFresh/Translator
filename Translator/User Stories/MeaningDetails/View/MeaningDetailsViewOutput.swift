@@ -1,1 +1,3 @@
-protocol MeaningDetailsViewOutput { }
+protocol MeaningDetailsViewOutput {
+    func viewDidLoad()
+}

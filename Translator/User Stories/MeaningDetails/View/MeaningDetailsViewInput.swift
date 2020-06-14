@@ -1,1 +1,3 @@
-protocol MeaningDetailsViewInput: class { }
+protocol MeaningDetailsViewInput: class {
+    func set(title: String)
+}

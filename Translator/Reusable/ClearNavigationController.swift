@@ -43,7 +43,10 @@ extension ClearNavigationController: UINavigationControllerDelegate {
                               willShow viewController: UIViewController,
                               animated: Bool) {
         UIView.performWithoutAnimation {
-            let barButton = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+            let barButton = UIBarButtonItem(title: "",
+                                            style: .plain,
+                                            target: nil,
+                                            action: nil)
             navigationController.topViewController?.navigationItem.backBarButtonItem = barButton
         }
     }
