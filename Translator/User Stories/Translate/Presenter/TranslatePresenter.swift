@@ -54,6 +54,11 @@ extension TranslatePresenter: TranslateViewOutput {
         }
         delayer.tryStart()
     }
+
+    func touched(meaning: Meaning) {
+        print(meaning.translation.text)
+        print(meaning.translation.note)
+    }
 }
 
 // MARK: - Private Methods

@@ -19,6 +19,10 @@ NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionView
         static let cellHeight: CGFloat = 35
     }
 
+    // MARK: - Public Properties
+
+    var onMeaningTouch: ((Meaning) -> Void)?
+
     // MARK: - Private Properties
 
     private var meanings: [Meaning]
@@ -50,6 +54,9 @@ NSObject, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionView
             ) as? MeaningCell else { return UICollectionViewCell() }
 
         cell.configure(with: meanings[indexPath.row])
+        cell.onCellTouch = { [weak self] meaning in
+            self?.onMeaningTouch?(meaning)
+        }
         return cell
     }
 

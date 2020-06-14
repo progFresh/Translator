@@ -11,4 +11,5 @@ import UIKit
 protocol TranslateViewOutput {
     func viewDidLoad()
     func textFieldDidChange(with text: String)
+    func touched(meaning: Meaning)
 }

@@ -117,6 +117,9 @@ private extension TranslateViewController {
 
     private func initAdapter(meanings: [Meaning]) -> MeaningsCollectionViewAdapter {
         let adapter = MeaningsCollectionViewAdapter(collectionView: collectionView, meanings: meanings)
+        adapter.onMeaningTouch = { [weak self] meaning in
+            self?.output?.touched(meaning: meaning)
+        }
         return adapter
     }
 }
