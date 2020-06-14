@@ -12,7 +12,7 @@ final class TranslateModuleConfigurator {
 
     // MARK: - Public Methods
 
-    func configure() -> UIViewController {
+    func configure() -> UINavigationController {
 
         let name = String(describing: TranslateViewController.self)
         let controller = UIStoryboard(name: name, bundle: Bundle.main).instantiateInitialViewController()
@@ -30,6 +30,6 @@ final class TranslateModuleConfigurator {
 //        router.view = view
         view.output = presenter
 
-        return view
+        return ClearNavigationController(rootViewController: view)
     }
 }
