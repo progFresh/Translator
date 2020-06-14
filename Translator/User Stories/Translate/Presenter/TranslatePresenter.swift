@@ -21,6 +21,7 @@ final class TranslatePresenter {
     // MARK: - Public Properties
 
     weak var view: TranslateViewInput?
+    var router: TranslateRouterInput?
 
     // MARK: - Init
 
@@ -56,8 +57,7 @@ extension TranslatePresenter: TranslateViewOutput {
     }
 
     func touched(meaning: Meaning) {
-        print(meaning.translation.text)
-        print(meaning.translation.note)
+        router?.showDetails(with: meaning)
     }
 }
 

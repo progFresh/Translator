@@ -9,7 +9,7 @@
 import UIKit
 import AlignedCollectionViewFlowLayout
 
-final class TranslateViewController: UIViewController {
+final class TranslateViewController: UIViewController, ModuleTransitionable {
 
     // MARK: - Constants
 

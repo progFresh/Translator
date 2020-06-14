@@ -37,6 +37,19 @@
 		EE2DA54A2496CD23009C3C8C /* MeaningsCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5492496CD23009C3C8C /* MeaningsCollectionViewAdapter.swift */; };
 		EE2DA5522496D2CA009C3C8C /* TouchableControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5512496D2CA009C3C8C /* TouchableControl.swift */; };
 		EE2DA5542496D800009C3C8C /* ClearNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5532496D800009C3C8C /* ClearNavigationController.swift */; };
+		EE2DA5692496DA88009C3C8C /* MeaningDetailsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5662496DA88009C3C8C /* MeaningDetailsModuleInput.swift */; };
+		EE2DA56A2496DA88009C3C8C /* MeaningDetailsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5672496DA88009C3C8C /* MeaningDetailsModuleOutput.swift */; };
+		EE2DA56B2496DA88009C3C8C /* MeaningDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5682496DA88009C3C8C /* MeaningDetailsPresenter.swift */; };
+		EE2DA5702496DA92009C3C8C /* MeaningDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA56C2496DA92009C3C8C /* MeaningDetailsViewController.swift */; };
+		EE2DA5712496DA92009C3C8C /* MeaningDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE2DA56D2496DA92009C3C8C /* MeaningDetailsViewController.storyboard */; };
+		EE2DA5722496DA92009C3C8C /* MeaningDetailsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA56E2496DA92009C3C8C /* MeaningDetailsViewInput.swift */; };
+		EE2DA5732496DA92009C3C8C /* MeaningDetailsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA56F2496DA92009C3C8C /* MeaningDetailsViewOutput.swift */; };
+		EE2DA5762496DA9A009C3C8C /* MeaningDetailsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5742496DA9A009C3C8C /* MeaningDetailsRouterInput.swift */; };
+		EE2DA5772496DA9A009C3C8C /* MeaningDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5752496DA9A009C3C8C /* MeaningDetailsRouter.swift */; };
+		EE2DA5792496DAA5009C3C8C /* MeaningDetailsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5782496DAA5009C3C8C /* MeaningDetailsModuleConfigurator.swift */; };
+		EE2DA57B2496DB1C009C3C8C /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA57A2496DB1C009C3C8C /* ModuleTransitionable.swift */; };
+		EE2DA57E2496DBB8009C3C8C /* TranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA57D2496DBB8009C3C8C /* TranslateRouter.swift */; };
+		EE2DA5802496DBD7009C3C8C /* TranslateRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA57F2496DBD7009C3C8C /* TranslateRouterInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +100,19 @@
 		EE2DA5492496CD23009C3C8C /* MeaningsCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningsCollectionViewAdapter.swift; sourceTree = "<group>"; };
 		EE2DA5512496D2CA009C3C8C /* TouchableControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchableControl.swift; sourceTree = "<group>"; };
 		EE2DA5532496D800009C3C8C /* ClearNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearNavigationController.swift; sourceTree = "<group>"; };
+		EE2DA5662496DA88009C3C8C /* MeaningDetailsModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningDetailsModuleInput.swift; sourceTree = "<group>"; };
+		EE2DA5672496DA88009C3C8C /* MeaningDetailsModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningDetailsModuleOutput.swift; sourceTree = "<group>"; };
+		EE2DA5682496DA88009C3C8C /* MeaningDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningDetailsPresenter.swift; sourceTree = "<group>"; };
+		EE2DA56C2496DA92009C3C8C /* MeaningDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningDetailsViewController.swift; sourceTree = "<group>"; };
+		EE2DA56D2496DA92009C3C8C /* MeaningDetailsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MeaningDetailsViewController.storyboard; sourceTree = "<group>"; };
+		EE2DA56E2496DA92009C3C8C /* MeaningDetailsViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningDetailsViewInput.swift; sourceTree = "<group>"; };
+		EE2DA56F2496DA92009C3C8C /* MeaningDetailsViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningDetailsViewOutput.swift; sourceTree = "<group>"; };
+		EE2DA5742496DA9A009C3C8C /* MeaningDetailsRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningDetailsRouterInput.swift; sourceTree = "<group>"; };
+		EE2DA5752496DA9A009C3C8C /* MeaningDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningDetailsRouter.swift; sourceTree = "<group>"; };
+		EE2DA5782496DAA5009C3C8C /* MeaningDetailsModuleConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeaningDetailsModuleConfigurator.swift; sourceTree = "<group>"; };
+		EE2DA57A2496DB1C009C3C8C /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
+		EE2DA57D2496DBB8009C3C8C /* TranslateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRouter.swift; sourceTree = "<group>"; };
+		EE2DA57F2496DBD7009C3C8C /* TranslateRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRouterInput.swift; sourceTree = "<group>"; };
 		F4B21E5CCC71C8E6A1B62404 /* Pods-Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translator.release.xcconfig"; path = "Target Support Files/Pods-Translator/Pods-Translator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +229,7 @@
 		EE2DA4DB2496752D009C3C8C /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
+				EE2DA5612496DA26009C3C8C /* MeaningDetails */,
 				EE2DA4DC24967678009C3C8C /* Translate */,
 			);
 			path = "User Stories";
@@ -212,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				EE2DA51024967E70009C3C8C /* Configurator */,
+				EE2DA57C2496DBA8009C3C8C /* Router */,
 				EE2DA51924968317009C3C8C /* Presenter */,
 				EE2DA4DD249676AE009C3C8C /* View */,
 			);
@@ -309,6 +337,7 @@
 				EE2DA5412496C5FB009C3C8C /* CollectionView.swift */,
 				EE2DA5512496D2CA009C3C8C /* TouchableControl.swift */,
 				EE2DA5532496D800009C3C8C /* ClearNavigationController.swift */,
+				EE2DA57A2496DB1C009C3C8C /* ModuleTransitionable.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -328,6 +357,64 @@
 				EE2DA5492496CD23009C3C8C /* MeaningsCollectionViewAdapter.swift */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		EE2DA5612496DA26009C3C8C /* MeaningDetails */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA5622496DA3A009C3C8C /* Configurator */,
+				EE2DA5632496DA42009C3C8C /* Router */,
+				EE2DA5652496DA4B009C3C8C /* Presenter */,
+				EE2DA5642496DA47009C3C8C /* View */,
+			);
+			path = MeaningDetails;
+			sourceTree = "<group>";
+		};
+		EE2DA5622496DA3A009C3C8C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA5782496DAA5009C3C8C /* MeaningDetailsModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		EE2DA5632496DA42009C3C8C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA5752496DA9A009C3C8C /* MeaningDetailsRouter.swift */,
+				EE2DA5742496DA9A009C3C8C /* MeaningDetailsRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EE2DA5642496DA47009C3C8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA56D2496DA92009C3C8C /* MeaningDetailsViewController.storyboard */,
+				EE2DA56C2496DA92009C3C8C /* MeaningDetailsViewController.swift */,
+				EE2DA56E2496DA92009C3C8C /* MeaningDetailsViewInput.swift */,
+				EE2DA56F2496DA92009C3C8C /* MeaningDetailsViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EE2DA5652496DA4B009C3C8C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA5662496DA88009C3C8C /* MeaningDetailsModuleInput.swift */,
+				EE2DA5672496DA88009C3C8C /* MeaningDetailsModuleOutput.swift */,
+				EE2DA5682496DA88009C3C8C /* MeaningDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EE2DA57C2496DBA8009C3C8C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA57D2496DBB8009C3C8C /* TranslateRouter.swift */,
+				EE2DA57F2496DBD7009C3C8C /* TranslateRouterInput.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +506,7 @@
 				EE2DA4BA2496681D009C3C8C /* Assets.xcassets in Resources */,
 				EE2DA4DF249676D4009C3C8C /* TranslateViewController.storyboard in Resources */,
 				EE2DA5472496CACA009C3C8C /* MeaningCell.xib in Resources */,
+				EE2DA5712496DA92009C3C8C /* MeaningDetailsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,26 +608,38 @@
 				EE2DA526249690A1009C3C8C /* TranslateService.swift in Sources */,
 				EE2DA53524969D76009C3C8C /* Word.swift in Sources */,
 				EE2DA53324969D3D009C3C8C /* WordEntry.swift in Sources */,
+				EE2DA56B2496DA88009C3C8C /* MeaningDetailsPresenter.swift in Sources */,
 				EE2DA53A2496ABEF009C3C8C /* TextField.swift in Sources */,
+				EE2DA5772496DA9A009C3C8C /* MeaningDetailsRouter.swift in Sources */,
 				EE2DA51D2496839C009C3C8C /* TranslateViewInput.swift in Sources */,
 				EE2DA52B2496964C009C3C8C /* TranslationEntry.swift in Sources */,
+				EE2DA56A2496DA88009C3C8C /* MeaningDetailsModuleOutput.swift in Sources */,
 				EE2DA5542496D800009C3C8C /* ClearNavigationController.swift in Sources */,
 				EE2DA5422496C5FB009C3C8C /* CollectionView.swift in Sources */,
+				EE2DA57B2496DB1C009C3C8C /* ModuleTransitionable.swift in Sources */,
 				EE2DA5522496D2CA009C3C8C /* TouchableControl.swift in Sources */,
 				EE2DA4B12496681B009C3C8C /* AppDelegate.swift in Sources */,
+				EE2DA5722496DA92009C3C8C /* MeaningDetailsViewInput.swift in Sources */,
 				EE2DA53C2496ACCB009C3C8C /* Constants.swift in Sources */,
 				EE2DA54A2496CD23009C3C8C /* MeaningsCollectionViewAdapter.swift in Sources */,
 				EE2DA51F249683E2009C3C8C /* TranslateViewOutput.swift in Sources */,
 				EE2DA51B24968333009C3C8C /* TranslatePresenter.swift in Sources */,
 				EE2DA4E1249676F3009C3C8C /* TranslateViewController.swift in Sources */,
 				EE2DA51224967E86009C3C8C /* TranslateModuleConfigurator.swift in Sources */,
+				EE2DA5732496DA92009C3C8C /* MeaningDetailsViewOutput.swift in Sources */,
+				EE2DA5702496DA92009C3C8C /* MeaningDetailsViewController.swift in Sources */,
 				EE2DA5402496B9FC009C3C8C /* DelayedOperation.swift in Sources */,
 				EE2DA522249685DF009C3C8C /* ColorExt.swift in Sources */,
+				EE2DA57E2496DBB8009C3C8C /* TranslateRouter.swift in Sources */,
 				EE2DA5462496CACA009C3C8C /* MeaningCell.swift in Sources */,
+				EE2DA5762496DA9A009C3C8C /* MeaningDetailsRouterInput.swift in Sources */,
 				EE2DA53E2496B5D2009C3C8C /* TaskDelayer.swift in Sources */,
 				EE2DA52D24969833009C3C8C /* Translation.swift in Sources */,
+				EE2DA5692496DA88009C3C8C /* MeaningDetailsModuleInput.swift in Sources */,
 				EE2DA52F24969A09009C3C8C /* MeaningEntry.swift in Sources */,
 				EE2DA53124969A78009C3C8C /* Meaning.swift in Sources */,
+				EE2DA5792496DAA5009C3C8C /* MeaningDetailsModuleConfigurator.swift in Sources */,
+				EE2DA5802496DBD7009C3C8C /* TranslateRouterInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

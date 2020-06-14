@@ -22,12 +22,11 @@ final class TranslateModuleConfigurator {
         }
 
         let presenter = TranslatePresenter(delayer: TaskDelayer(delay: 0.5))
-//        let router = ProductHistoryDetailRouter()
-//
+        let router = TranslateRouter()
+
         presenter.view = view
-//        presenter.router = router
-//        presenter.output = output
-//        router.view = view
+        presenter.router = router
+        router.view = view
         view.output = presenter
 
         return ClearNavigationController(rootViewController: view)
