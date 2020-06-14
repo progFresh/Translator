@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,13 @@
 		EE2DA51D2496839C009C3C8C /* TranslateViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA51C2496839C009C3C8C /* TranslateViewInput.swift */; };
 		EE2DA51F249683E2009C3C8C /* TranslateViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA51E249683E2009C3C8C /* TranslateViewOutput.swift */; };
 		EE2DA522249685DF009C3C8C /* ColorExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA521249685DF009C3C8C /* ColorExt.swift */; };
+		EE2DA526249690A1009C3C8C /* TranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA525249690A1009C3C8C /* TranslateService.swift */; };
+		EE2DA52B2496964C009C3C8C /* TranslationEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA52A2496964C009C3C8C /* TranslationEntry.swift */; };
+		EE2DA52D24969833009C3C8C /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA52C24969833009C3C8C /* Translation.swift */; };
+		EE2DA52F24969A09009C3C8C /* MeaningEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA52E24969A09009C3C8C /* MeaningEntry.swift */; };
+		EE2DA53124969A78009C3C8C /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA53024969A78009C3C8C /* Meaning.swift */; };
+		EE2DA53324969D3D009C3C8C /* WordEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA53224969D3D009C3C8C /* WordEntry.swift */; };
+		EE2DA53524969D76009C3C8C /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA53424969D76009C3C8C /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,13 @@
 		EE2DA51C2496839C009C3C8C /* TranslateViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewInput.swift; sourceTree = "<group>"; };
 		EE2DA51E249683E2009C3C8C /* TranslateViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewOutput.swift; sourceTree = "<group>"; };
 		EE2DA521249685DF009C3C8C /* ColorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExt.swift; sourceTree = "<group>"; };
+		EE2DA525249690A1009C3C8C /* TranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateService.swift; sourceTree = "<group>"; };
+		EE2DA52A2496964C009C3C8C /* TranslationEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationEntry.swift; sourceTree = "<group>"; };
+		EE2DA52C24969833009C3C8C /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		EE2DA52E24969A09009C3C8C /* MeaningEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningEntry.swift; sourceTree = "<group>"; };
+		EE2DA53024969A78009C3C8C /* Meaning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meaning.swift; sourceTree = "<group>"; };
+		EE2DA53224969D3D009C3C8C /* WordEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordEntry.swift; sourceTree = "<group>"; };
+		EE2DA53424969D76009C3C8C /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		F4B21E5CCC71C8E6A1B62404 /* Pods-Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translator.release.xcconfig"; path = "Target Support Files/Pods-Translator/Pods-Translator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +98,6 @@
 				1DFCF729833F71ECF6BB2149 /* Pods-Translator-TranslatorTests.debug.xcconfig */,
 				09D3A0AF9F479DCD78963961 /* Pods-Translator-TranslatorTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +133,8 @@
 		EE2DA4AF2496681B009C3C8C /* Translator */ = {
 			isa = PBXGroup;
 			children = (
+				EE2DA527249694DA009C3C8C /* Models */,
+				EE2DA52324969083009C3C8C /* Services */,
 				EE2DA4D8249671AD009C3C8C /* 🏠Application */,
 				EE2DA4DB2496752D009C3C8C /* User Stories */,
 				EE2DA4D924967278009C3C8C /* 📦 Resources */,
@@ -214,6 +229,51 @@
 				EE2DA521249685DF009C3C8C /* ColorExt.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		EE2DA52324969083009C3C8C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA52424969093009C3C8C /* Translation */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EE2DA52424969093009C3C8C /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA525249690A1009C3C8C /* TranslateService.swift */,
+			);
+			path = Translation;
+			sourceTree = "<group>";
+		};
+		EE2DA527249694DA009C3C8C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA5292496958F009C3C8C /* Entry */,
+				EE2DA52824969588009C3C8C /* Entity */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE2DA52824969588009C3C8C /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA52C24969833009C3C8C /* Translation.swift */,
+				EE2DA53024969A78009C3C8C /* Meaning.swift */,
+				EE2DA53424969D76009C3C8C /* Word.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EE2DA5292496958F009C3C8C /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA52A2496964C009C3C8C /* TranslationEntry.swift */,
+				EE2DA52E24969A09009C3C8C /* MeaningEntry.swift */,
+				EE2DA53224969D3D009C3C8C /* WordEntry.swift */,
+			);
+			path = Entry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,13 +462,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2DA526249690A1009C3C8C /* TranslateService.swift in Sources */,
+				EE2DA53524969D76009C3C8C /* Word.swift in Sources */,
+				EE2DA53324969D3D009C3C8C /* WordEntry.swift in Sources */,
 				EE2DA51D2496839C009C3C8C /* TranslateViewInput.swift in Sources */,
+				EE2DA52B2496964C009C3C8C /* TranslationEntry.swift in Sources */,
 				EE2DA4B12496681B009C3C8C /* AppDelegate.swift in Sources */,
 				EE2DA51F249683E2009C3C8C /* TranslateViewOutput.swift in Sources */,
 				EE2DA51B24968333009C3C8C /* TranslatePresenter.swift in Sources */,
 				EE2DA4E1249676F3009C3C8C /* TranslateViewController.swift in Sources */,
 				EE2DA51224967E86009C3C8C /* TranslateModuleConfigurator.swift in Sources */,
 				EE2DA522249685DF009C3C8C /* ColorExt.swift in Sources */,
+				EE2DA52D24969833009C3C8C /* Translation.swift in Sources */,
+				EE2DA52F24969A09009C3C8C /* MeaningEntry.swift in Sources */,
+				EE2DA53124969A78009C3C8C /* Meaning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

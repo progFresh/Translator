@@ -21,5 +21,11 @@ extension TranslatePresenter: TranslateViewOutput {
 
     func viewDidLoad() {
         view?.configure()
+        TranslateService().getTranslation(word: "call", page: "1")
+            .onCompleted { (value) in
+                print(value)
+            }.onError { (error) in
+                print(error)
+        }
     }
 }
