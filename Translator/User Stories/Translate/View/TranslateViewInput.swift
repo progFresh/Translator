@@ -11,6 +11,6 @@ import UIKit
 protocol TranslateViewInput: class {
     func configure()
     func setErrorViews(errorText: String?)
-    func setData(with word: Word)
+    func setData(with meanings: [Meaning])
     func setDescriptionLabel(text: String)
 }

@@ -2,6 +2,7 @@ platform :ios, '12.0'
 
 def tools
   pod 'SwiftLint', '~> 0.30.1'
+  pod 'AlignedCollectionViewFlowLayout'
 end
 
 def service_layer

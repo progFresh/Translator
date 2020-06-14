@@ -32,6 +32,9 @@
 		EE2DA53E2496B5D2009C3C8C /* TaskDelayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA53D2496B5D2009C3C8C /* TaskDelayer.swift */; };
 		EE2DA5402496B9FC009C3C8C /* DelayedOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA53F2496B9FC009C3C8C /* DelayedOperation.swift */; };
 		EE2DA5422496C5FB009C3C8C /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5412496C5FB009C3C8C /* CollectionView.swift */; };
+		EE2DA5462496CACA009C3C8C /* MeaningCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5442496CACA009C3C8C /* MeaningCell.swift */; };
+		EE2DA5472496CACA009C3C8C /* MeaningCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE2DA5452496CACA009C3C8C /* MeaningCell.xib */; };
+		EE2DA54A2496CD23009C3C8C /* MeaningsCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5492496CD23009C3C8C /* MeaningsCollectionViewAdapter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		EE2DA53D2496B5D2009C3C8C /* TaskDelayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelayer.swift; sourceTree = "<group>"; };
 		EE2DA53F2496B9FC009C3C8C /* DelayedOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedOperation.swift; sourceTree = "<group>"; };
 		EE2DA5412496C5FB009C3C8C /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
+		EE2DA5442496CACA009C3C8C /* MeaningCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningCell.swift; sourceTree = "<group>"; };
+		EE2DA5452496CACA009C3C8C /* MeaningCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MeaningCell.xib; sourceTree = "<group>"; };
+		EE2DA5492496CD23009C3C8C /* MeaningsCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeaningsCollectionViewAdapter.swift; sourceTree = "<group>"; };
 		F4B21E5CCC71C8E6A1B62404 /* Pods-Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translator.release.xcconfig"; path = "Target Support Files/Pods-Translator/Pods-Translator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -211,6 +217,8 @@
 		EE2DA4DD249676AE009C3C8C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EE2DA5482496CCFB009C3C8C /* Adapter */,
+				EE2DA5432496CA9B009C3C8C /* Cell */,
 				EE2DA4DE249676D4009C3C8C /* TranslateViewController.storyboard */,
 				EE2DA4E0249676F3009C3C8C /* TranslateViewController.swift */,
 				EE2DA51C2496839C009C3C8C /* TranslateViewInput.swift */,
@@ -297,6 +305,23 @@
 				EE2DA5412496C5FB009C3C8C /* CollectionView.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		EE2DA5432496CA9B009C3C8C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA5442496CACA009C3C8C /* MeaningCell.swift */,
+				EE2DA5452496CACA009C3C8C /* MeaningCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EE2DA5482496CCFB009C3C8C /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA5492496CD23009C3C8C /* MeaningsCollectionViewAdapter.swift */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -387,6 +412,7 @@
 				EE2DA4BD2496681D009C3C8C /* LaunchScreen.storyboard in Resources */,
 				EE2DA4BA2496681D009C3C8C /* Assets.xcassets in Resources */,
 				EE2DA4DF249676D4009C3C8C /* TranslateViewController.storyboard in Resources */,
+				EE2DA5472496CACA009C3C8C /* MeaningCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,12 +520,14 @@
 				EE2DA5422496C5FB009C3C8C /* CollectionView.swift in Sources */,
 				EE2DA4B12496681B009C3C8C /* AppDelegate.swift in Sources */,
 				EE2DA53C2496ACCB009C3C8C /* Constants.swift in Sources */,
+				EE2DA54A2496CD23009C3C8C /* MeaningsCollectionViewAdapter.swift in Sources */,
 				EE2DA51F249683E2009C3C8C /* TranslateViewOutput.swift in Sources */,
 				EE2DA51B24968333009C3C8C /* TranslatePresenter.swift in Sources */,
 				EE2DA4E1249676F3009C3C8C /* TranslateViewController.swift in Sources */,
 				EE2DA51224967E86009C3C8C /* TranslateModuleConfigurator.swift in Sources */,
 				EE2DA5402496B9FC009C3C8C /* DelayedOperation.swift in Sources */,
 				EE2DA522249685DF009C3C8C /* ColorExt.swift in Sources */,
+				EE2DA5462496CACA009C3C8C /* MeaningCell.swift in Sources */,
 				EE2DA53E2496B5D2009C3C8C /* TaskDelayer.swift in Sources */,
 				EE2DA52D24969833009C3C8C /* Translation.swift in Sources */,
 				EE2DA52F24969A09009C3C8C /* MeaningEntry.swift in Sources */,

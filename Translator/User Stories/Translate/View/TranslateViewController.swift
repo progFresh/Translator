@@ -7,8 +7,17 @@
 //
 
 import UIKit
+import AlignedCollectionViewFlowLayout
 
 final class TranslateViewController: UIViewController {
+
+    // MARK: - Constants
+
+    private enum Constants {
+        static let minimumInteritemSpacing = CGFloat(8)
+        static let minimumLineSpacing = CGFloat(8)
+        static let sectionInset = UIEdgeInsets(top: 0, left: 15, bottom: 85, right: 15)
+    }
 
     // MARK: - IBOutlets
 
@@ -20,6 +29,10 @@ final class TranslateViewController: UIViewController {
     // MARK: - Public Properties
 
     var output: TranslateViewOutput?
+
+    // MARK: - Private Properties
+
+    private var adapter: MeaningsCollectionViewAdapter?
 
     // MARK: - UIViewController
 
@@ -49,8 +62,8 @@ extension TranslateViewController: TranslateViewInput {
         }
     }
 
-    func setData(with word: Word) {
-        
+    func setData(with meanings: [Meaning]) {
+        setupAdapter(meanings: meanings)
     }
 
     func setDescriptionLabel(text: String) {
@@ -83,6 +96,27 @@ private extension TranslateViewController {
 
     func configureCollection() {
         collectionView.backgroundColor = .clear
-        
+        collectionView.delaysContentTouches = false
+        let alignedFlowLayout = AlignedCollectionViewFlowLayout(
+            horizontalAlignment: .left,
+            verticalAlignment: .center
+        )
+        alignedFlowLayout.minimumInteritemSpacing = Constants.minimumInteritemSpacing
+        alignedFlowLayout.minimumLineSpacing = Constants.minimumLineSpacing
+        alignedFlowLayout.sectionInset = Constants.sectionInset
+        collectionView.collectionViewLayout = alignedFlowLayout
+    }
+
+    private func setupAdapter(meanings: [Meaning]) {
+        let adapter = initAdapter(meanings: meanings)
+        collectionView.dataSource = adapter
+        collectionView.delegate = adapter
+        collectionView.reloadData()
+        self.adapter = adapter
+    }
+
+    private func initAdapter(meanings: [Meaning]) -> MeaningsCollectionViewAdapter {
+        let adapter = MeaningsCollectionViewAdapter(collectionView: collectionView, meanings: meanings)
+        return adapter
     }
 }

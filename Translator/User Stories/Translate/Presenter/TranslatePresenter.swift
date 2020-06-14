@@ -31,6 +31,7 @@ final class TranslatePresenter {
     // MARK: - Private Properties
 
     private let delayer: TaskDelayer
+    private var meanings = [Meaning]()
 }
 
 // MARK: - TranslateViewOutput
@@ -77,6 +78,7 @@ private extension TranslatePresenter {
         }
 
         view?.setErrorViews(errorText: nil)
-        view?.setData(with: word)
+        self.meanings = word.meanings
+        view?.setData(with: meanings)
     }
 }
