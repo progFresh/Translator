@@ -10,9 +10,23 @@ import UIKit
 
 final class TranslateViewController: UIViewController {
 
+    // MARK: - Public Properties
+
+    var output: TranslateViewOutput?
+
     // MARK: - UIViewController
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.output?.viewDidLoad()
+    }
+}
+
+// MARK: - TranslateViewInput
+
+extension TranslateViewController: TranslateViewInput {
+
+    func configure() {
+        view.backgroundColor = UIColor.Translate.lightBlue
     }
 }
