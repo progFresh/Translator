@@ -83,5 +83,6 @@ private extension TranslateViewController {
 
     func configureCollection() {
         collectionView.backgroundColor = .clear
+        
     }
 }

@@ -31,6 +31,7 @@
 		EE2DA53C2496ACCB009C3C8C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA53B2496ACCB009C3C8C /* Constants.swift */; };
 		EE2DA53E2496B5D2009C3C8C /* TaskDelayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA53D2496B5D2009C3C8C /* TaskDelayer.swift */; };
 		EE2DA5402496B9FC009C3C8C /* DelayedOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA53F2496B9FC009C3C8C /* DelayedOperation.swift */; };
+		EE2DA5422496C5FB009C3C8C /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5412496C5FB009C3C8C /* CollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		EE2DA53B2496ACCB009C3C8C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EE2DA53D2496B5D2009C3C8C /* TaskDelayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelayer.swift; sourceTree = "<group>"; };
 		EE2DA53F2496B9FC009C3C8C /* DelayedOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayedOperation.swift; sourceTree = "<group>"; };
+		EE2DA5412496C5FB009C3C8C /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		F4B21E5CCC71C8E6A1B62404 /* Pods-Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translator.release.xcconfig"; path = "Target Support Files/Pods-Translator/Pods-Translator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -292,6 +294,7 @@
 				EE2DA5392496ABEF009C3C8C /* TextField.swift */,
 				EE2DA53D2496B5D2009C3C8C /* TaskDelayer.swift */,
 				EE2DA53F2496B9FC009C3C8C /* DelayedOperation.swift */,
+				EE2DA5412496C5FB009C3C8C /* CollectionView.swift */,
 			);
 			path = Reusable;
 			sourceTree = "<group>";
@@ -488,6 +491,7 @@
 				EE2DA53A2496ABEF009C3C8C /* TextField.swift in Sources */,
 				EE2DA51D2496839C009C3C8C /* TranslateViewInput.swift in Sources */,
 				EE2DA52B2496964C009C3C8C /* TranslationEntry.swift in Sources */,
+				EE2DA5422496C5FB009C3C8C /* CollectionView.swift in Sources */,
 				EE2DA4B12496681B009C3C8C /* AppDelegate.swift in Sources */,
 				EE2DA53C2496ACCB009C3C8C /* Constants.swift in Sources */,
 				EE2DA51F249683E2009C3C8C /* TranslateViewOutput.swift in Sources */,
