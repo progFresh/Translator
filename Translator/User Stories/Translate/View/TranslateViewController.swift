@@ -10,6 +10,10 @@ import UIKit
 
 final class TranslateViewController: UIViewController {
 
+    // MARK: - IBOutlets
+
+    @IBOutlet private weak var textField: TextField!
+
     // MARK: - Public Properties
 
     var output: TranslateViewOutput?
@@ -28,5 +32,17 @@ extension TranslateViewController: TranslateViewInput {
 
     func configure() {
         view.backgroundColor = UIColor.Translate.lightBlue
+        configureTextField()
+    }
+}
+
+// MARK: - Private Methods
+
+private extension TranslateViewController {
+
+    func configureTextField() {
+        textField.didChangeText = { [weak self] text in
+            self?.output?.textFieldDidChange(with: text)
+        }
     }
 }
