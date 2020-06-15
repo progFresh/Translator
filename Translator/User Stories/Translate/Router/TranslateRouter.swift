@@ -19,8 +19,9 @@ final class TranslateRouter {
 
 extension TranslateRouter: TranslateRouterInput {
 
-    func showDetails(with meaning: Meaning) {
-        let vc = MeaningDetailsModuleConfigurator().configure(meaning: meaning)
+    func showDetails(with meaning: Meaning, wordText: String) {
+        let vc = MeaningDetailsModuleConfigurator().configure(meaning: meaning,
+                                                              wordText: wordText)
         view?.showModule(vc)
     }
 }

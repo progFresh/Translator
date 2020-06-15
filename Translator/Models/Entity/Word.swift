@@ -9,6 +9,7 @@
 import NodeKit
 
 struct Word {
+    let text: String
     let meanings: [Meaning]
 }
 
@@ -18,11 +19,11 @@ extension Word: DTOConvertible {
     public typealias DTO = WordEntry
 
     public static func from(dto entry: Word.DTO) throws -> Word {
-        return Word(meanings: try .from(dto: entry.meanings))
+        return Word(text: entry.text, meanings: try .from(dto: entry.meanings))
     }
 
     public func toDTO() throws -> Word.DTO {
-        return Word.DTO(meanings: try self.meanings.toDTO())
+        return Word.DTO(text: self.text, meanings: try self.meanings.toDTO())
     }
 }
 

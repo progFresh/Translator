@@ -33,6 +33,7 @@ final class TranslatePresenter {
 
     private let delayer: TaskDelayer
     private var meanings = [Meaning]()
+    private var wordText = ""
 }
 
 // MARK: - TranslateViewOutput
@@ -57,7 +58,7 @@ extension TranslatePresenter: TranslateViewOutput {
     }
 
     func touched(meaning: Meaning) {
-        router?.showDetails(with: meaning)
+        router?.showDetails(with: meaning, wordText: wordText)
     }
 }
 
@@ -84,6 +85,7 @@ private extension TranslatePresenter {
 
         view?.setErrorViews(errorText: nil)
         self.meanings = word.meanings
+        self.wordText = word.text
         view?.setData(with: meanings)
     }
 }

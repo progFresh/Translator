@@ -10,6 +10,7 @@ import NodeKit
 
 struct Meaning {
     let translation: Translation
+    let imageUrl: String?
 }
 
 // MARK: - DTOConvertible
@@ -18,11 +19,11 @@ extension Meaning: DTOConvertible {
     public typealias DTO = MeaningEntry
 
     public static func from(dto entry: Meaning.DTO) throws -> Meaning {
-        return Meaning(translation: try .from(dto: entry.translation))
+        return Meaning(translation: try .from(dto: entry.translation), imageUrl: entry.imageUrl)
     }
 
     public func toDTO() throws -> Meaning.DTO {
-        return MeaningEntry(translation: try self.translation.toDTO())
+        return MeaningEntry(translation: try self.translation.toDTO(), imageUrl: self.imageUrl)
     }
 }
 

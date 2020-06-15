@@ -9,11 +9,13 @@ final class MeaningDetailsPresenter {
     // MARK: - Private Properties
 
     private let meaning: Meaning
+    private let wordText: String
 
     // MARK: - Init
 
-    init(meaning: Meaning) {
+    init(meaning: Meaning, wordText: String) {
         self.meaning = meaning
+        self.wordText = wordText
     }
 }
 
@@ -23,6 +25,7 @@ extension MeaningDetailsPresenter: MeaningDetailsViewOutput {
 
     func viewDidLoad() {
         view?.set(title: meaning.translation.text)
+        view?.setContent(wordText: wordText, meaning: meaning)
     }
 }
 

@@ -4,7 +4,9 @@ final class MeaningDetailsModuleConfigurator {
 
     // MARK: - Public Methods
 
-    func configure(output: MeaningDetailsModuleOutput? = nil, meaning: Meaning) -> MeaningDetailsViewController {
+    func configure(output: MeaningDetailsModuleOutput? = nil,
+                   meaning: Meaning,
+                   wordText: String) -> MeaningDetailsViewController {
         
         let name = String(describing: MeaningDetailsViewController.self)
         let controller = UIStoryboard(name: name, bundle: Bundle.main).instantiateInitialViewController()
@@ -13,7 +15,7 @@ final class MeaningDetailsModuleConfigurator {
             fatalError("Can't load \(name) from storyboard, check that controller is initial view controller")
         }
 
-        let presenter = MeaningDetailsPresenter(meaning: meaning)
+        let presenter = MeaningDetailsPresenter(meaning: meaning, wordText: wordText)
         let router = MeaningDetailsRouter()
 
         presenter.view = view

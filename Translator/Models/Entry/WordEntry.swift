@@ -9,6 +9,7 @@
 import NodeKit
 
 struct WordEntry: Codable {
+    let text: String
     let meanings: [MeaningEntry]
 }
 

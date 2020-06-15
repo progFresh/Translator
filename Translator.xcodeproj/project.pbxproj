@@ -50,6 +50,7 @@
 		EE2DA57B2496DB1C009C3C8C /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA57A2496DB1C009C3C8C /* ModuleTransitionable.swift */; };
 		EE2DA57E2496DBB8009C3C8C /* TranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA57D2496DBB8009C3C8C /* TranslateRouter.swift */; };
 		EE2DA5802496DBD7009C3C8C /* TranslateRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA57F2496DBD7009C3C8C /* TranslateRouterInput.swift */; };
+		EE2DA5882496EE11009C3C8C /* UIIMageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5872496EE11009C3C8C /* UIIMageExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +114,7 @@
 		EE2DA57A2496DB1C009C3C8C /* ModuleTransitionable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTransitionable.swift; sourceTree = "<group>"; };
 		EE2DA57D2496DBB8009C3C8C /* TranslateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRouter.swift; sourceTree = "<group>"; };
 		EE2DA57F2496DBD7009C3C8C /* TranslateRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRouterInput.swift; sourceTree = "<group>"; };
+		EE2DA5872496EE11009C3C8C /* UIIMageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIMageExt.swift; sourceTree = "<group>"; };
 		F4B21E5CCC71C8E6A1B62404 /* Pods-Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translator.release.xcconfig"; path = "Target Support Files/Pods-Translator/Pods-Translator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -279,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				EE2DA521249685DF009C3C8C /* ColorExt.swift */,
+				EE2DA5872496EE11009C3C8C /* UIIMageExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -606,6 +609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE2DA526249690A1009C3C8C /* TranslateService.swift in Sources */,
+				EE2DA5882496EE11009C3C8C /* UIIMageExt.swift in Sources */,
 				EE2DA53524969D76009C3C8C /* Word.swift in Sources */,
 				EE2DA53324969D3D009C3C8C /* WordEntry.swift in Sources */,
 				EE2DA56B2496DA88009C3C8C /* MeaningDetailsPresenter.swift in Sources */,

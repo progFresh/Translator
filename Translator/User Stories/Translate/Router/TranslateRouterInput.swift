@@ -9,5 +9,5 @@
 import UIKit
 
 protocol TranslateRouterInput {
-    func showDetails(with meaning: Meaning)
+    func showDetails(with meaning: Meaning, wordText: String)
 }

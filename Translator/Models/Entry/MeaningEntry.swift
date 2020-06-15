@@ -10,6 +10,7 @@ import NodeKit
 
 struct MeaningEntry: Codable {
     let translation: TranslationEntry
+    let imageUrl: String?
 }
 
 // MARK: - RawMappable
