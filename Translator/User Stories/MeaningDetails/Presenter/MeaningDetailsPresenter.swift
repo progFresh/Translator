@@ -24,7 +24,6 @@ final class MeaningDetailsPresenter {
 extension MeaningDetailsPresenter: MeaningDetailsViewOutput {
 
     func viewDidLoad() {
-        view?.set(title: meaning.translation.text)
         view?.setContent(wordText: wordText, meaning: meaning)
     }
 }
