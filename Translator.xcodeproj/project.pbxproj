@@ -51,6 +51,23 @@
 		EE2DA57E2496DBB8009C3C8C /* TranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA57D2496DBB8009C3C8C /* TranslateRouter.swift */; };
 		EE2DA5802496DBD7009C3C8C /* TranslateRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA57F2496DBD7009C3C8C /* TranslateRouterInput.swift */; };
 		EE2DA5882496EE11009C3C8C /* UIIMageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5872496EE11009C3C8C /* UIIMageExt.swift */; };
+		EE2DA58E2496FC06009C3C8C /* XCTestExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA58D2496FC06009C3C8C /* XCTestExt.swift */; };
+		EE2DA5922496FC6A009C3C8C /* TranslateConfiguratorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5912496FC6A009C3C8C /* TranslateConfiguratorTest.swift */; };
+		EE2DA5932496FD4A009C3C8C /* MeaningDetailsModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5782496DAA5009C3C8C /* MeaningDetailsModuleConfigurator.swift */; };
+		EE2DA5942496FDD7009C3C8C /* MeaningDetailsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5672496DA88009C3C8C /* MeaningDetailsModuleOutput.swift */; };
+		EE2DA5952496FDDC009C3C8C /* MeaningDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA56C2496DA92009C3C8C /* MeaningDetailsViewController.swift */; };
+		EE2DA5962496FDE0009C3C8C /* MeaningDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5682496DA88009C3C8C /* MeaningDetailsPresenter.swift */; };
+		EE2DA5972496FDE5009C3C8C /* MeaningDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5752496DA9A009C3C8C /* MeaningDetailsRouter.swift */; };
+		EE2DA5982496FE02009C3C8C /* ModuleTransitionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA57A2496DB1C009C3C8C /* ModuleTransitionable.swift */; };
+		EE2DA5992496FE07009C3C8C /* MeaningDetailsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5742496DA9A009C3C8C /* MeaningDetailsRouterInput.swift */; };
+		EE2DA59A2496FE0E009C3C8C /* MeaningDetailsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA56E2496DA92009C3C8C /* MeaningDetailsViewInput.swift */; };
+		EE2DA59B2496FE15009C3C8C /* Meaning.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA53024969A78009C3C8C /* Meaning.swift */; };
+		EE2DA59C2496FE2A009C3C8C /* MeaningDetailsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA56F2496DA92009C3C8C /* MeaningDetailsViewOutput.swift */; };
+		EE2DA59D2496FE30009C3C8C /* MeaningDetailsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5662496DA88009C3C8C /* MeaningDetailsModuleInput.swift */; };
+		EE2DA59E2496FE36009C3C8C /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA52C24969833009C3C8C /* Translation.swift */; };
+		EE2DA59F2496FE3C009C3C8C /* MeaningEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA52E24969A09009C3C8C /* MeaningEntry.swift */; };
+		EE2DA5A02496FE54009C3C8C /* TranslationEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA52A2496964C009C3C8C /* TranslationEntry.swift */; };
+		EE2DA5A12496FE77009C3C8C /* UIIMageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2DA5872496EE11009C3C8C /* UIIMageExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +132,8 @@
 		EE2DA57D2496DBB8009C3C8C /* TranslateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRouter.swift; sourceTree = "<group>"; };
 		EE2DA57F2496DBD7009C3C8C /* TranslateRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateRouterInput.swift; sourceTree = "<group>"; };
 		EE2DA5872496EE11009C3C8C /* UIIMageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIIMageExt.swift; sourceTree = "<group>"; };
+		EE2DA58D2496FC06009C3C8C /* XCTestExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestExt.swift; sourceTree = "<group>"; };
+		EE2DA5912496FC6A009C3C8C /* TranslateConfiguratorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateConfiguratorTest.swift; sourceTree = "<group>"; };
 		F4B21E5CCC71C8E6A1B62404 /* Pods-Translator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Translator.release.xcconfig"; path = "Target Support Files/Pods-Translator/Pods-Translator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,7 +214,9 @@
 		EE2DA4C62496681D009C3C8C /* TranslatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				EE2DA58F2496FC42009C3C8C /* Flow */,
 				EE2DA4C72496681D009C3C8C /* TranslatorTests.swift */,
+				EE2DA58D2496FC06009C3C8C /* XCTestExt.swift */,
 				EE2DA4C92496681D009C3C8C /* Info.plist */,
 			);
 			path = TranslatorTests;
@@ -418,6 +439,22 @@
 				EE2DA57F2496DBD7009C3C8C /* TranslateRouterInput.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		EE2DA58F2496FC42009C3C8C /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA5902496FC52009C3C8C /* MeaningDetails */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		EE2DA5902496FC52009C3C8C /* MeaningDetails */ = {
+			isa = PBXGroup;
+			children = (
+				EE2DA5912496FC6A009C3C8C /* TranslateConfiguratorTest.swift */,
+			);
+			path = MeaningDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -651,7 +688,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2DA58E2496FC06009C3C8C /* XCTestExt.swift in Sources */,
+				EE2DA5A12496FE77009C3C8C /* UIIMageExt.swift in Sources */,
+				EE2DA5942496FDD7009C3C8C /* MeaningDetailsModuleOutput.swift in Sources */,
 				EE2DA4C82496681D009C3C8C /* TranslatorTests.swift in Sources */,
+				EE2DA59D2496FE30009C3C8C /* MeaningDetailsModuleInput.swift in Sources */,
+				EE2DA5A02496FE54009C3C8C /* TranslationEntry.swift in Sources */,
+				EE2DA5972496FDE5009C3C8C /* MeaningDetailsRouter.swift in Sources */,
+				EE2DA59A2496FE0E009C3C8C /* MeaningDetailsViewInput.swift in Sources */,
+				EE2DA5992496FE07009C3C8C /* MeaningDetailsRouterInput.swift in Sources */,
+				EE2DA5952496FDDC009C3C8C /* MeaningDetailsViewController.swift in Sources */,
+				EE2DA5982496FE02009C3C8C /* ModuleTransitionable.swift in Sources */,
+				EE2DA5962496FDE0009C3C8C /* MeaningDetailsPresenter.swift in Sources */,
+				EE2DA5922496FC6A009C3C8C /* TranslateConfiguratorTest.swift in Sources */,
+				EE2DA5932496FD4A009C3C8C /* MeaningDetailsModuleConfigurator.swift in Sources */,
+				EE2DA59C2496FE2A009C3C8C /* MeaningDetailsViewOutput.swift in Sources */,
+				EE2DA59B2496FE15009C3C8C /* Meaning.swift in Sources */,
+				EE2DA59F2496FE3C009C3C8C /* MeaningEntry.swift in Sources */,
+				EE2DA59E2496FE36009C3C8C /* Translation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -842,7 +896,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQSG7S4P3W;
 				INFOPLIST_FILE = TranslatorTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -851,7 +905,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = polozov.TranslatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Translator.app/Translator";
 			};
 			name = Debug;
@@ -865,7 +919,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QQSG7S4P3W;
 				INFOPLIST_FILE = TranslatorTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -874,7 +928,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = polozov.TranslatorTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Translator.app/Translator";
 			};
 			name = Release;
